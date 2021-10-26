@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+  /* Primary Colors */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /* Neutral */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Spartan', sans-serif;
+  margin: 2rem 2rem;
+  background: url('./images/bg-pattern-top-mobile.svg'),
+    url('./images/bg-pattern-bottom-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top left bottom right;
+}
+
+#heading {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  color: var(--very-dark-magenta);
+}
+
+#opinions {
+  width: 340px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  color: hsl(303, 10%, 53%);
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.rating {
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+}
+
+.card-rating {
+  width: 350px;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: var(--light-grayish-magenta);
+  text-align: center;
+}
+
+.review {
+  background-color: var(--very-dark-magenta);
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 350px;
+  border-radius: 0.5rem;
+  /* font-size: 1rem;s */
+}
+
+img.image {
+  border-radius: 50%;
+}
+
+.name {
+  color: hsl(0, 0%, 100%);
+}
+
+.buyer {
+  display: inline;
+  flex-direction: column;
+}
+
+.avatar {
+  display: flex;
+}
+
+.info {
+  margin-left: 1rem;
+}
+
+.avatar > img {
+  width: 100%;
+  max-width: 40px;
+  border-radius: 50%;
+  height: 100%;
+}
+
+p.description {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.3rem;
+}
+
+.verified-buyer {
+  color: hsl(333, 80%, 67%);
+}
+
+#opinions {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  div.reviews {
+    display: flex;
+    justify-content: center;
+  }
+  .review {
+    width: 380px;
+    margin: 2rem 3rem;
+  }
+  .card-rating {
+    width: 500px;
+    display: inline-flex;
+  }
+  .rating {
+    margin-left: 2rem;
+  }
+  .ratings {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  #heading {
+    width: 400px;
+    text-align: initial;
+    margin: initial;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  p#opinions {
+    text-align: initial;
+    margin: initial;
+    width: 450px;
+  }
+  body {
+    margin: 0;
+    background-image: url('./images/bg-pattern-top-desktop.svg'),
+      url('./images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+  }
+  .heading {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6rem;
+  }
+
+  .rating-2 {
+    position: relative;
+    right: 100px;
+  }
+
+  .rating-1 {
+    position: relative;
+    right: 150px;
+  }
+  .review:nth-child(2) {
+    position: relative;
+    top: 25px;
+  }
+  .review:nth-child(3) {
+    position: relative;
+    top: 50px;
+  }
+
+  .card-rating {
+    margin: 0.5rem auto;
+  }
+}
